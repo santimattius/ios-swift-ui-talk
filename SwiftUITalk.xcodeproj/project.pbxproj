@@ -11,6 +11,14 @@
 		4B084A682905F1B800BD0950 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084A672905F1B800BD0950 /* ContentView.swift */; };
 		4B084A6A2905F1BD00BD0950 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B084A692905F1BD00BD0950 /* Assets.xcassets */; };
 		4B084A6D2905F1BD00BD0950 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B084A6C2905F1BD00BD0950 /* Preview Assets.xcassets */; };
+		4B084A792905F25400BD0950 /* StateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084A782905F25400BD0950 /* StateView.swift */; };
+		4B084A7B2905F26400BD0950 /* BindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084A7A2905F26400BD0950 /* BindingView.swift */; };
+		4B084A7D2905F27600BD0950 /* StateObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084A7C2905F27600BD0950 /* StateObjectView.swift */; };
+		4B084A7F2905F29500BD0950 /* BasicAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084A7E2905F29500BD0950 /* BasicAnimation.swift */; };
+		4B084A812905F2A900BD0950 /* DotsLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084A802905F2A900BD0950 /* DotsLoadingView.swift */; };
+		4B084A832905F2BE00BD0950 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084A822905F2BE00BD0950 /* ImageView.swift */; };
+		4B084A852905F46300BD0950 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084A842905F46300BD0950 /* TextView.swift */; };
+		4B084A872905F51700BD0950 /* TransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084A862905F51700BD0950 /* TransitionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		4B084A672905F1B800BD0950 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4B084A692905F1BD00BD0950 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B084A6C2905F1BD00BD0950 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4B084A782905F25400BD0950 /* StateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateView.swift; sourceTree = "<group>"; };
+		4B084A7A2905F26400BD0950 /* BindingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingView.swift; sourceTree = "<group>"; };
+		4B084A7C2905F27600BD0950 /* StateObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateObjectView.swift; sourceTree = "<group>"; };
+		4B084A7E2905F29500BD0950 /* BasicAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicAnimation.swift; sourceTree = "<group>"; };
+		4B084A802905F2A900BD0950 /* DotsLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotsLoadingView.swift; sourceTree = "<group>"; };
+		4B084A822905F2BE00BD0950 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		4B084A842905F46300BD0950 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		4B084A862905F51700BD0950 /* TransitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +67,17 @@
 		4B084A642905F1B800BD0950 /* SwiftUITalk */ = {
 			isa = PBXGroup;
 			children = (
+				4B084A772905F23200BD0950 /* State */,
+				4B084A762905F22600BD0950 /* Animations */,
+				4B084A752905F21F00BD0950 /* Lists */,
+				4B084A742905F21700BD0950 /* Navigation */,
+				4B084A732905F20600BD0950 /* UIKit */,
 				4B084A652905F1B800BD0950 /* SwiftUITalkApp.swift */,
 				4B084A672905F1B800BD0950 /* ContentView.swift */,
 				4B084A692905F1BD00BD0950 /* Assets.xcassets */,
 				4B084A6B2905F1BD00BD0950 /* Preview Content */,
+				4B084A822905F2BE00BD0950 /* ImageView.swift */,
+				4B084A842905F46300BD0950 /* TextView.swift */,
 			);
 			path = SwiftUITalk;
 			sourceTree = "<group>";
@@ -65,6 +88,47 @@
 				4B084A6C2905F1BD00BD0950 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4B084A732905F20600BD0950 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		4B084A742905F21700BD0950 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		4B084A752905F21F00BD0950 /* Lists */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lists;
+			sourceTree = "<group>";
+		};
+		4B084A762905F22600BD0950 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				4B084A7E2905F29500BD0950 /* BasicAnimation.swift */,
+				4B084A802905F2A900BD0950 /* DotsLoadingView.swift */,
+				4B084A862905F51700BD0950 /* TransitionView.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		4B084A772905F23200BD0950 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				4B084A782905F25400BD0950 /* StateView.swift */,
+				4B084A7A2905F26400BD0950 /* BindingView.swift */,
+				4B084A7C2905F27600BD0950 /* StateObjectView.swift */,
+			);
+			path = State;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +201,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B084A832905F2BE00BD0950 /* ImageView.swift in Sources */,
+				4B084A792905F25400BD0950 /* StateView.swift in Sources */,
 				4B084A682905F1B800BD0950 /* ContentView.swift in Sources */,
+				4B084A872905F51700BD0950 /* TransitionView.swift in Sources */,
+				4B084A7B2905F26400BD0950 /* BindingView.swift in Sources */,
+				4B084A812905F2A900BD0950 /* DotsLoadingView.swift in Sources */,
+				4B084A7D2905F27600BD0950 /* StateObjectView.swift in Sources */,
+				4B084A852905F46300BD0950 /* TextView.swift in Sources */,
 				4B084A662905F1B800BD0950 /* SwiftUITalkApp.swift in Sources */,
+				4B084A7F2905F29500BD0950 /* BasicAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
