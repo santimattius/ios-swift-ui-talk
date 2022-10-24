@@ -13,8 +13,30 @@ struct BindingView: View {
     }
 }
 
+struct PushButton: View {
+    let title: String
+    @State var isOn: Bool
+
+
+    var body: some View {
+        Button(title) {
+            isOn.toggle()
+        }
+        .frame(width: 80,height: 80)
+        .padding()
+        .background(isOn ? .green : .red)
+        .foregroundColor(.white)
+        .clipShape(Circle())
+        .shadow(radius: isOn ? 0 : 5)
+        
+    }
+}
+
 struct BindingView_Previews: PreviewProvider {
     static var previews: some View {
-        BindingView()
+        Group {
+            BindingView()
+            PushButton(title: "Hello", isOn: true)
+        }
     }
 }

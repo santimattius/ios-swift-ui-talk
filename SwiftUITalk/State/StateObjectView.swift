@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct StateObjectView: View {
+    
+    @State private var tapCount: Int = 0
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button("Tap count: \(tapCount)"){
+            tapCount += 1
+        }
     }
 }
 

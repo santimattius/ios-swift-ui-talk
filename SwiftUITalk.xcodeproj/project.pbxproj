@@ -19,6 +19,10 @@
 		4B084A832905F2BE00BD0950 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084A822905F2BE00BD0950 /* ImageView.swift */; };
 		4B084A852905F46300BD0950 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084A842905F46300BD0950 /* TextView.swift */; };
 		4B084A872905F51700BD0950 /* TransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084A862905F51700BD0950 /* TransitionView.swift */; };
+		4B084A892905F82E00BD0950 /* UIKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084A882905F82E00BD0950 /* UIKitView.swift */; };
+		4B084A8C2905FA1000BD0950 /* ImperativeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084A8B2905FA1000BD0950 /* ImperativeView.swift */; };
+		4B084A8E2905FA9100BD0950 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084A8D2905FA9100BD0950 /* Person.swift */; };
+		4B084A902905FB2E00BD0950 /* DeclarativeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084A8F2905FB2E00BD0950 /* DeclarativeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +39,10 @@
 		4B084A822905F2BE00BD0950 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		4B084A842905F46300BD0950 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		4B084A862905F51700BD0950 /* TransitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionView.swift; sourceTree = "<group>"; };
+		4B084A882905F82E00BD0950 /* UIKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitView.swift; sourceTree = "<group>"; };
+		4B084A8B2905FA1000BD0950 /* ImperativeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImperativeView.swift; sourceTree = "<group>"; };
+		4B084A8D2905FA9100BD0950 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		4B084A8F2905FB2E00BD0950 /* DeclarativeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeclarativeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +75,7 @@
 		4B084A642905F1B800BD0950 /* SwiftUITalk */ = {
 			isa = PBXGroup;
 			children = (
+				4B084A8A2905F9CF00BD0950 /* Introduction */,
 				4B084A772905F23200BD0950 /* State */,
 				4B084A762905F22600BD0950 /* Animations */,
 				4B084A752905F21F00BD0950 /* Lists */,
@@ -93,6 +102,7 @@
 		4B084A732905F20600BD0950 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				4B084A882905F82E00BD0950 /* UIKitView.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -129,6 +139,16 @@
 				4B084A7C2905F27600BD0950 /* StateObjectView.swift */,
 			);
 			path = State;
+			sourceTree = "<group>";
+		};
+		4B084A8A2905F9CF00BD0950 /* Introduction */ = {
+			isa = PBXGroup;
+			children = (
+				4B084A8B2905FA1000BD0950 /* ImperativeView.swift */,
+				4B084A8D2905FA9100BD0950 /* Person.swift */,
+				4B084A8F2905FB2E00BD0950 /* DeclarativeView.swift */,
+			);
+			path = Introduction;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,9 +226,13 @@
 				4B084A682905F1B800BD0950 /* ContentView.swift in Sources */,
 				4B084A872905F51700BD0950 /* TransitionView.swift in Sources */,
 				4B084A7B2905F26400BD0950 /* BindingView.swift in Sources */,
+				4B084A902905FB2E00BD0950 /* DeclarativeView.swift in Sources */,
 				4B084A812905F2A900BD0950 /* DotsLoadingView.swift in Sources */,
+				4B084A8C2905FA1000BD0950 /* ImperativeView.swift in Sources */,
+				4B084A892905F82E00BD0950 /* UIKitView.swift in Sources */,
 				4B084A7D2905F27600BD0950 /* StateObjectView.swift in Sources */,
 				4B084A852905F46300BD0950 /* TextView.swift in Sources */,
+				4B084A8E2905FA9100BD0950 /* Person.swift in Sources */,
 				4B084A662905F1B800BD0950 /* SwiftUITalkApp.swift in Sources */,
 				4B084A7F2905F29500BD0950 /* BasicAnimation.swift in Sources */,
 			);

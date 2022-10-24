@@ -32,8 +32,6 @@ struct StopView: View {
 
 struct StateView_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            StateView()
-        }
+        StateView()
     }
 }
