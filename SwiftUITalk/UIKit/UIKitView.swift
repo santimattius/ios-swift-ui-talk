@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct UIKitView: View {
+    @State var course =  CourseRepository.courses
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List {
+            ForEach(course, id: \.id){ course  in
+                CourseRow(course: course)
+            }
+       }
     }
 }
 

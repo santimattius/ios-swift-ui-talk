@@ -23,6 +23,12 @@
 		4B084A8C2905FA1000BD0950 /* ImperativeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084A8B2905FA1000BD0950 /* ImperativeView.swift */; };
 		4B084A8E2905FA9100BD0950 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084A8D2905FA9100BD0950 /* Person.swift */; };
 		4B084A902905FB2E00BD0950 /* DeclarativeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084A8F2905FB2E00BD0950 /* DeclarativeView.swift */; };
+		4B084A93290759D000BD0950 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084A92290759D000BD0950 /* Course.swift */; };
+		4B084A95290759E500BD0950 /* LevelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084A94290759E500BD0950 /* LevelType.swift */; };
+		4B084A9729075A0E00BD0950 /* CourseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084A9629075A0E00BD0950 /* CourseRepository.swift */; };
+		4B084A9929075A6F00BD0950 /* CourseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084A9829075A6F00BD0950 /* CourseListView.swift */; };
+		4B084A9B29075D0400BD0950 /* CourseNavigationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084A9A29075D0300BD0950 /* CourseNavigationViews.swift */; };
+		4B084A9D290761D000BD0950 /* BasicNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084A9C290761D000BD0950 /* BasicNavigationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +49,12 @@
 		4B084A8B2905FA1000BD0950 /* ImperativeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImperativeView.swift; sourceTree = "<group>"; };
 		4B084A8D2905FA9100BD0950 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		4B084A8F2905FB2E00BD0950 /* DeclarativeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeclarativeView.swift; sourceTree = "<group>"; };
+		4B084A92290759D000BD0950 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		4B084A94290759E500BD0950 /* LevelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelType.swift; sourceTree = "<group>"; };
+		4B084A9629075A0E00BD0950 /* CourseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRepository.swift; sourceTree = "<group>"; };
+		4B084A9829075A6F00BD0950 /* CourseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListView.swift; sourceTree = "<group>"; };
+		4B084A9A29075D0300BD0950 /* CourseNavigationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseNavigationViews.swift; sourceTree = "<group>"; };
+		4B084A9C290761D000BD0950 /* BasicNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicNavigationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +87,7 @@
 		4B084A642905F1B800BD0950 /* SwiftUITalk */ = {
 			isa = PBXGroup;
 			children = (
+				4B084A91290759C200BD0950 /* Data */,
 				4B084A8A2905F9CF00BD0950 /* Introduction */,
 				4B084A772905F23200BD0950 /* State */,
 				4B084A762905F22600BD0950 /* Animations */,
@@ -110,6 +123,8 @@
 		4B084A742905F21700BD0950 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				4B084A9A29075D0300BD0950 /* CourseNavigationViews.swift */,
+				4B084A9C290761D000BD0950 /* BasicNavigationView.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -117,6 +132,7 @@
 		4B084A752905F21F00BD0950 /* Lists */ = {
 			isa = PBXGroup;
 			children = (
+				4B084A9829075A6F00BD0950 /* CourseListView.swift */,
 			);
 			path = Lists;
 			sourceTree = "<group>";
@@ -149,6 +165,16 @@
 				4B084A8F2905FB2E00BD0950 /* DeclarativeView.swift */,
 			);
 			path = Introduction;
+			sourceTree = "<group>";
+		};
+		4B084A91290759C200BD0950 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4B084A92290759D000BD0950 /* Course.swift */,
+				4B084A94290759E500BD0950 /* LevelType.swift */,
+				4B084A9629075A0E00BD0950 /* CourseRepository.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,9 +248,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B084A832905F2BE00BD0950 /* ImageView.swift in Sources */,
+				4B084A9D290761D000BD0950 /* BasicNavigationView.swift in Sources */,
+				4B084A9729075A0E00BD0950 /* CourseRepository.swift in Sources */,
 				4B084A792905F25400BD0950 /* StateView.swift in Sources */,
 				4B084A682905F1B800BD0950 /* ContentView.swift in Sources */,
 				4B084A872905F51700BD0950 /* TransitionView.swift in Sources */,
+				4B084A95290759E500BD0950 /* LevelType.swift in Sources */,
+				4B084A9B29075D0400BD0950 /* CourseNavigationViews.swift in Sources */,
 				4B084A7B2905F26400BD0950 /* BindingView.swift in Sources */,
 				4B084A902905FB2E00BD0950 /* DeclarativeView.swift in Sources */,
 				4B084A812905F2A900BD0950 /* DotsLoadingView.swift in Sources */,
@@ -233,6 +263,8 @@
 				4B084A7D2905F27600BD0950 /* StateObjectView.swift in Sources */,
 				4B084A852905F46300BD0950 /* TextView.swift in Sources */,
 				4B084A8E2905FA9100BD0950 /* Person.swift in Sources */,
+				4B084A93290759D000BD0950 /* Course.swift in Sources */,
+				4B084A9929075A6F00BD0950 /* CourseListView.swift in Sources */,
 				4B084A662905F1B800BD0950 /* SwiftUITalkApp.swift in Sources */,
 				4B084A7F2905F29500BD0950 /* BasicAnimation.swift in Sources */,
 			);
