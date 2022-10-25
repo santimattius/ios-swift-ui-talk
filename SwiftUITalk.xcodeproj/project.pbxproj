@@ -29,6 +29,10 @@
 		4B084A9929075A6F00BD0950 /* CourseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084A9829075A6F00BD0950 /* CourseListView.swift */; };
 		4B084A9B29075D0400BD0950 /* CourseNavigationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084A9A29075D0300BD0950 /* CourseNavigationViews.swift */; };
 		4B084A9D290761D000BD0950 /* BasicNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084A9C290761D000BD0950 /* BasicNavigationView.swift */; };
+		4B084AA029089B6200BD0950 /* BasicsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084A9F29089B6200BD0950 /* BasicsListView.swift */; };
+		4B084AA229089DA300BD0950 /* BasicsUIKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084AA129089DA300BD0950 /* BasicsUIKitView.swift */; };
+		4B084AA429089DEA00BD0950 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084AA329089DEA00BD0950 /* MapView.swift */; };
+		4B084AA72908A1B500BD0950 /* PreviewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084AA62908A1B500BD0950 /* PreviewsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +59,10 @@
 		4B084A9829075A6F00BD0950 /* CourseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListView.swift; sourceTree = "<group>"; };
 		4B084A9A29075D0300BD0950 /* CourseNavigationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseNavigationViews.swift; sourceTree = "<group>"; };
 		4B084A9C290761D000BD0950 /* BasicNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicNavigationView.swift; sourceTree = "<group>"; };
+		4B084A9F29089B6200BD0950 /* BasicsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicsListView.swift; sourceTree = "<group>"; };
+		4B084AA129089DA300BD0950 /* BasicsUIKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicsUIKitView.swift; sourceTree = "<group>"; };
+		4B084AA329089DEA00BD0950 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		4B084AA62908A1B500BD0950 /* PreviewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +95,8 @@
 		4B084A642905F1B800BD0950 /* SwiftUITalk */ = {
 			isa = PBXGroup;
 			children = (
+				4B084AA52908A19600BD0950 /* Previews */,
+				4B084A9E2908995A00BD0950 /* Basics */,
 				4B084A91290759C200BD0950 /* Data */,
 				4B084A8A2905F9CF00BD0950 /* Introduction */,
 				4B084A772905F23200BD0950 /* State */,
@@ -98,8 +108,6 @@
 				4B084A672905F1B800BD0950 /* ContentView.swift */,
 				4B084A692905F1BD00BD0950 /* Assets.xcassets */,
 				4B084A6B2905F1BD00BD0950 /* Preview Content */,
-				4B084A822905F2BE00BD0950 /* ImageView.swift */,
-				4B084A842905F46300BD0950 /* TextView.swift */,
 			);
 			path = SwiftUITalk;
 			sourceTree = "<group>";
@@ -116,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				4B084A882905F82E00BD0950 /* UIKitView.swift */,
+				4B084AA129089DA300BD0950 /* BasicsUIKitView.swift */,
+				4B084AA329089DEA00BD0950 /* MapView.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -133,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				4B084A9829075A6F00BD0950 /* CourseListView.swift */,
+				4B084A9F29089B6200BD0950 /* BasicsListView.swift */,
 			);
 			path = Lists;
 			sourceTree = "<group>";
@@ -175,6 +186,23 @@
 				4B084A9629075A0E00BD0950 /* CourseRepository.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		4B084A9E2908995A00BD0950 /* Basics */ = {
+			isa = PBXGroup;
+			children = (
+				4B084A822905F2BE00BD0950 /* ImageView.swift */,
+				4B084A842905F46300BD0950 /* TextView.swift */,
+			);
+			path = Basics;
+			sourceTree = "<group>";
+		};
+		4B084AA52908A19600BD0950 /* Previews */ = {
+			isa = PBXGroup;
+			children = (
+				4B084AA62908A1B500BD0950 /* PreviewsView.swift */,
+			);
+			path = Previews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +283,8 @@
 				4B084A872905F51700BD0950 /* TransitionView.swift in Sources */,
 				4B084A95290759E500BD0950 /* LevelType.swift in Sources */,
 				4B084A9B29075D0400BD0950 /* CourseNavigationViews.swift in Sources */,
+				4B084AA229089DA300BD0950 /* BasicsUIKitView.swift in Sources */,
+				4B084AA429089DEA00BD0950 /* MapView.swift in Sources */,
 				4B084A7B2905F26400BD0950 /* BindingView.swift in Sources */,
 				4B084A902905FB2E00BD0950 /* DeclarativeView.swift in Sources */,
 				4B084A812905F2A900BD0950 /* DotsLoadingView.swift in Sources */,
@@ -265,6 +295,8 @@
 				4B084A8E2905FA9100BD0950 /* Person.swift in Sources */,
 				4B084A93290759D000BD0950 /* Course.swift in Sources */,
 				4B084A9929075A6F00BD0950 /* CourseListView.swift in Sources */,
+				4B084AA029089B6200BD0950 /* BasicsListView.swift in Sources */,
+				4B084AA72908A1B500BD0950 /* PreviewsView.swift in Sources */,
 				4B084A662905F1B800BD0950 /* SwiftUITalkApp.swift in Sources */,
 				4B084A7F2905F29500BD0950 /* BasicAnimation.swift in Sources */,
 			);
