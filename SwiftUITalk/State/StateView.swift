@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct StateView: View {
+    
+    @State var isPlaying: Bool = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button(action: {
+            self.isPlaying.toggle()
+        }){
+            if isPlaying {
+                StopView()
+            } else {
+                PlayView()
+            }
+        }
     }
 }
 

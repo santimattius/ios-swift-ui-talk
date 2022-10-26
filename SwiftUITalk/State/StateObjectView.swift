@@ -7,13 +7,22 @@
 
 import SwiftUI
 
+class CounterViewModel: ObservableObject {
+    
+    @Published var tapCount: Int = 0
+    
+    func increment(){
+        tapCount += 1
+    }
+}
+
 struct StateObjectView: View {
     
-    @State private var tapCount: Int = 0
+    @StateObject private var viewModel = CounterViewModel()
     
     var body: some View {
-        Button("Tap count: \(tapCount)"){
-            tapCount += 1
+        Button("Tap count: \(viewModel.tapCount)"){
+            viewModel.increment()
         }
     }
 }

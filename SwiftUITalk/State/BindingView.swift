@@ -8,18 +8,23 @@
 import SwiftUI
 
 struct BindingView: View {
+    
+    @State private var isOn: Bool = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            PushButton(isOn: $isOn)
+        }
     }
 }
 
 struct PushButton: View {
-    let title: String
-    @State var isOn: Bool
-
+    
+    @Binding var isOn: Bool
 
     var body: some View {
-        Button(title) {
+        Button(isOn ?  "Enable": "Disable") {
             isOn.toggle()
         }
         .frame(width: 80,height: 80)
@@ -36,7 +41,6 @@ struct BindingView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             BindingView()
-            PushButton(title: "Hello", isOn: true)
         }
     }
 }

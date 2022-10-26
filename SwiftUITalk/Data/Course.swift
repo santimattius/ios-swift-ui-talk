@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Course: Identifiable, Equatable {
+struct Course: Identifiable, Equatable, Hashable {
     let id = UUID()
     let name: String
     let description:String
@@ -15,5 +15,5 @@ struct Course: Identifiable, Equatable {
     let free: Bool
     var level:LevelType = .beginner
     let url: String
-    
+    var favorite: Bool = false	
 }
