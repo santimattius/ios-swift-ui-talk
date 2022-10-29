@@ -8,9 +8,37 @@
 import SwiftUI
 
 struct TransitionView: View {
-       
+    
+    @State private var showTranslation = false
+    
     var body: some View {
-        Card(text: "Book", color: .orange)
+        VStack {
+            Card(text: "Book", color: .black)
+            
+            if showTranslation {
+                Card(text: "Libro", color: .yellow)
+                //                    .transition(
+                //                        .asymmetric(
+                //                            insertion: .scale,
+                //                            removal: .opacity
+                //                        )
+                //                    )
+                    .transition(.offsetScaledOpacityOut)
+            }
+        }.onTapGesture {
+            withAnimation(Animation.spring()){
+                self.showTranslation.toggle()
+            }
+        }
+    }
+}
+
+extension AnyTransition {
+    
+    static var offsetScaledOpacityOut:AnyTransition{
+        .offset(x: 0, y: 700)
+        .combined(with: .scale)
+        .combined(with: .opacity)
     }
 }
 

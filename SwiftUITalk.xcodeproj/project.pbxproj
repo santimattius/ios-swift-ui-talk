@@ -33,6 +33,10 @@
 		4B084AA229089DA300BD0950 /* BasicsUIKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084AA129089DA300BD0950 /* BasicsUIKitView.swift */; };
 		4B084AA429089DEA00BD0950 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084AA329089DEA00BD0950 /* MapView.swift */; };
 		4B084AA72908A1B500BD0950 /* PreviewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084AA62908A1B500BD0950 /* PreviewsView.swift */; };
+		4B084AA92908B34800BD0950 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084AA82908B34800BD0950 /* WebView.swift */; };
+		4B084AAC2908B48100BD0950 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 4B084AAB2908B48100BD0950 /* Lottie */; };
+		4B084AAF2908B50E00BD0950 /* AvocatoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B084AAE2908B50E00BD0950 /* AvocatoView.swift */; };
+		4B084AB22908B5EE00BD0950 /* avocato.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B084AB12908B5EE00BD0950 /* avocato.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +67,9 @@
 		4B084AA129089DA300BD0950 /* BasicsUIKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicsUIKitView.swift; sourceTree = "<group>"; };
 		4B084AA329089DEA00BD0950 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		4B084AA62908A1B500BD0950 /* PreviewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewsView.swift; sourceTree = "<group>"; };
+		4B084AA82908B34800BD0950 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		4B084AAE2908B50E00BD0950 /* AvocatoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvocatoView.swift; sourceTree = "<group>"; };
+		4B084AB12908B5EE00BD0950 /* avocato.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = avocato.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B084AAC2908B48100BD0950 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +103,8 @@
 		4B084A642905F1B800BD0950 /* SwiftUITalk */ = {
 			isa = PBXGroup;
 			children = (
+				4B084AB02908B56300BD0950 /* Lottie */,
+				4B084AAD2908B4F500BD0950 /* Avocato */,
 				4B084AA52908A19600BD0950 /* Previews */,
 				4B084A9E2908995A00BD0950 /* Basics */,
 				4B084A91290759C200BD0950 /* Data */,
@@ -126,6 +136,7 @@
 				4B084A882905F82E00BD0950 /* UIKitView.swift */,
 				4B084AA129089DA300BD0950 /* BasicsUIKitView.swift */,
 				4B084AA329089DEA00BD0950 /* MapView.swift */,
+				4B084AA82908B34800BD0950 /* WebView.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -205,6 +216,22 @@
 			path = Previews;
 			sourceTree = "<group>";
 		};
+		4B084AAD2908B4F500BD0950 /* Avocato */ = {
+			isa = PBXGroup;
+			children = (
+				4B084AAE2908B50E00BD0950 /* AvocatoView.swift */,
+			);
+			path = Avocato;
+			sourceTree = "<group>";
+		};
+		4B084AB02908B56300BD0950 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				4B084AB12908B5EE00BD0950 /* avocato.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -221,6 +248,9 @@
 			dependencies = (
 			);
 			name = SwiftUITalk;
+			packageProductDependencies = (
+				4B084AAB2908B48100BD0950 /* Lottie */,
+			);
 			productName = SwiftUITalk;
 			productReference = 4B084A622905F1B800BD0950 /* SwiftUITalk.app */;
 			productType = "com.apple.product-type.application";
@@ -249,6 +279,9 @@
 				Base,
 			);
 			mainGroup = 4B084A592905F1B800BD0950;
+			packageReferences = (
+				4B084AAA2908B48100BD0950 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 4B084A632905F1B800BD0950 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -265,6 +298,7 @@
 			files = (
 				4B084A6D2905F1BD00BD0950 /* Preview Assets.xcassets in Resources */,
 				4B084A6A2905F1BD00BD0950 /* Assets.xcassets in Resources */,
+				4B084AB22908B5EE00BD0950 /* avocato.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,9 +317,11 @@
 				4B084A872905F51700BD0950 /* TransitionView.swift in Sources */,
 				4B084A95290759E500BD0950 /* LevelType.swift in Sources */,
 				4B084A9B29075D0400BD0950 /* CourseNavigationViews.swift in Sources */,
+				4B084AAF2908B50E00BD0950 /* AvocatoView.swift in Sources */,
 				4B084AA229089DA300BD0950 /* BasicsUIKitView.swift in Sources */,
 				4B084AA429089DEA00BD0950 /* MapView.swift in Sources */,
 				4B084A7B2905F26400BD0950 /* BindingView.swift in Sources */,
+				4B084AA92908B34800BD0950 /* WebView.swift in Sources */,
 				4B084A902905FB2E00BD0950 /* DeclarativeView.swift in Sources */,
 				4B084A812905F2A900BD0950 /* DotsLoadingView.swift in Sources */,
 				4B084A8C2905FA1000BD0950 /* ImperativeView.swift in Sources */,
@@ -499,6 +535,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4B084AAA2908B48100BD0950 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4B084AAB2908B48100BD0950 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B084AAA2908B48100BD0950 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4B084A5A2905F1B800BD0950 /* Project object */;
 }

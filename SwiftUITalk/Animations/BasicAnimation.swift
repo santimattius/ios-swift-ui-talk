@@ -8,17 +8,24 @@
 import SwiftUI
 
 struct BasicAnimation: View {
+    
+    @State private var isPressed = false
+
     var body: some View {
         ZStack{
             Circle()
                 .frame(width: 180, height: 180)
-                .foregroundColor(.green)
+                .foregroundColor(isPressed ? Color(.systemGray4): .green)
                        
             Image(systemName: "keyboard")
                 .font(.system(size: 80))
-                .foregroundColor(Color(.systemGray6))
-                .scaleEffect(0.5)
+                .foregroundColor(isPressed ?.green: Color(.systemGray6))
+                .scaleEffect(isPressed ? 1.0: 0.5)
             
+        }.onTapGesture {
+            withAnimation(.easeInOut){
+                self.isPressed.toggle()
+            }
         }
     }
 }
